@@ -1,9 +1,9 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-button{
+button {
   background: rgba(0, 0, 0, .3);
   border: 1px solid #fff;
   border-radius: 5px;
@@ -14,69 +14,72 @@ button{
   padding: 1rem;
 }
 
-  #timer-controls:hover button,
-  #timer-durations:hover button{
-    opacity: 1;
-  }
+#timer-controls:hover button,
+#timer-durations:hover button {
+  opacity: 1;
+}
 
 #timer,
 #timer-controls,
-#timer-durations{
+#timer-durations {
   position: absolute;
   z-index: 10;
 }
 
-#timer{
+#timer {
   font-family: Optima, serif;
   font-size: 25em;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
-  #timer[data-timer-weakpoint='medium']{
-    color: blue;
-  }
-  #timer[data-timer-weakpoint='low']{
-    color: orange;
-  }
-  #timer[data-timer-weakpoint='finished']{
-    color: red;
-  }
 
+#timer[data-timer-weakpoint='medium'] {
+  color: blue;
+}
+
+#timer[data-timer-weakpoint='low'] {
+  color: orange;
+}
+
+#timer[data-timer-weakpoint='finished'] {
+  color: red;
+}
 
 #timer-controls,
-#timer-durations{
+#timer-durations {
   bottom: 2%;
 }
 
-#timer-controls{
+#timer-controls {
   text-align: center;
   width: 100%;
   z-index: 100;
 }
 
-  #timer-controls button{
-  }
+#timer-controls button {
+}
 
-#timer-durations{
+#timer-durations {
   margin-top: -25%;
   width: 15%;
   z-index: 200;
 }
 
-  #timer-durations button{
-    border-left: none;
-    border-radius: 0 5px 5px 0;
-    font-size: 1.5em;
-    width: 100%;
-  }
+#timer-durations button {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.5em;
+  width: 100%;
+}
 
-@media(max-width: 1000px){
-  body{
+@media (max-width: 1000px) {
+  body {
     font-size: 80%;
   }
 }
-@media(max-width: 600px){
-  body{
+
+@media (max-width: 600px) {
+  body {
     font-size: 60%;
   }
 }
